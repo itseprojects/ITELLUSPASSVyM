@@ -1,0 +1,157 @@
+@import url("Normalize.css");
+
+@font-face
+{
+	font-family: "Franklin";
+	src: url("../Fonts/PlusSansNormal-Regular.otf") format("truetype");
+}
+
+article
+		{
+			margin-left: auto;
+			margin-right: auto;
+			width: 1000px;
+		}
+
+p
+{
+	text-align: justify;
+}
+
+
+table{
+    border: 0 solid black;
+    width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+
+
+td,th
+{
+	border: 0 solid black;
+	vertical-align: top;
+	text-align: left;
+	width: 2px;
+}
+
+label 
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center
+}
+
+input
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 6em;
+	height: 1.5em
+}
+
+ul,li
+{
+	list-style:none;
+}
+
+#Centrar
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Fuente
+ {
+ 	font-family: "Franklin", sans-serif;
+ }
+
+.Fila
+{
+	margin: .80em auto;
+	padding: .80em;
+	width: 80%;
+}
+
+.Titulos
+{
+	text-align: center;
+	background: #5300ff;
+	color: white
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: #5300ff;
+	color: white;
+	width: 12.8em;
+	height: 4.2em;
+	padding: 18px;
+	font-size: 12px;
+	border: none;
+	border-radius: .25em;
+  }
+
+.textbox {
+	border-radius: .25em;
+	width: 14.8em;
+	height: 1.6em;
+}
+  
+  /* Reset Select */
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background: #5300ff;
+	background-image: none;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+	display: none;
+  }
+  /* Custom Select */
+  .select {
+	position: relative;
+	display: flex;
+	width: 15em;
+	height: 2em;
+	line-height: 2;
+	background: #5300ff;
+	overflow: hidden;
+	border-radius: .25em;
+  }
+  select {
+	flex: 1;
+	padding: 0 .5em;
+	color: #fff;
+	cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 1em;
+	background: #5300ff;
+	cursor: pointer;
+	pointer-events: none;
+	-webkit-transition: .25s all ease;
+	-o-transition: .25s all ease;
+	transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+	color: #080808;
+  }

@@ -1,0 +1,19 @@
+/*Hoja de vida Cristian Perez | Hija de vida web */
+
+/* TEAM */
+	Fundador: Cristian Perez
+	Contacto: cristiancperezt[at]gmail.com
+	Facebook:
+	From: Colombia, Bogota D.C
+
+/* THANKS */ 
+	http://bextlan.com/
+
+/* SITE */
+	Last update:
+	Language: Español
+	Standars: HTML5, CSS3
+	Components: Responsive Design, Google fonts
+	Software: SublimeText3, Photoshop, Illustrator.
+
+/* http://humanstxt.org/ */
