@@ -62,20 +62,7 @@ function changePass(){
 	let xhr = new XMLHttpRequest();
 	let url = "https://prod-52.westus.logic.azure.com:443/workflows/573911f307d54a9eb274f8ef6637b932/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=X4H-QF6-hjd4vsoohkNYB1JVBpH9Ipj-xPVrpOb25gk";
 
- 
-    // Verificamos si las constraseñas no coinciden 
-    if (pass.value != repass.value) {
- 
-        // Si las constraseñas no coinciden mostramos un mensaje 
-        document.getElementById("error").classList.add("mostrar");
- 
-        return false;
-    } else {
- 
-        // Si las contraseñas coinciden ocultamos el mensaje de error
-        document.getElementById("error").classList.remove("mostrar");
-
-			// open a connection
+	// open a connection
 	xhr.open("POST", url, true);
 
 	// Set the request header i.e. which type of content you are sending
@@ -92,6 +79,19 @@ function changePass(){
 	// Converting JSON data to string
 	var data = JSON.stringify({ "codigo":cod.value, "customer":cliente, "o365mail": ms365mail.value, "personalmail": altermail.value, "Pass":pass.value });
  
+ 
+    // Verificamos si las constraseñas no coinciden 
+    if (pass.value != repass.value) {
+ 
+        // Si las constraseñas no coinciden mostramos un mensaje 
+        document.getElementById("error").classList.add("mostrar");
+ 
+        return false;
+    } else {
+ 
+        // Si las contraseñas coinciden ocultamos el mensaje de error
+        document.getElementById("error").classList.remove("mostrar");
+
         // Sending data with the request
 		xhr.send(data);
 		//Habilitar codigo
@@ -100,8 +100,6 @@ function changePass(){
 		repass.disabled=true;
 		visto.style.visibility = 'hidden';
 
-		document.getElementById('client').value = ''
-		document.getElementById('reduser').value = ''
 		document.getElementById('o365mail').value = ''
 		document.getElementById('personalmail').value = ''
 		document.getElementById('cod').value = ''
